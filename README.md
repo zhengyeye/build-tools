@@ -1,5 +1,6 @@
 # build-tools
 * grunt-test
+    * 下载运行：需要 npm i 安装依赖包
     * 实践中使用grunt demo
     * 中文主页 : http://www.gruntjs.net/
     * 是一套前端**自动化构建**工具，一个基于nodeJs的命令行工具
@@ -48,4 +49,32 @@ node -v       //查看版本号
     * grunt-contrib-copy——复制文件、文件夹
     * **grunt-contrib-requirejs**——合并压缩requirejs管理的所有js模块文件
     * grunt-contrib-watch——实时监控文件变化、调用相应的任务重新执行
+    ***
+* gulp-test
+  * 实践中使用gulp demo
+  * 中文主页: http://www.gulpjs.com.cn/
+  * gulp是与grunt功能类似的**前端项目构建**工具, 也是基于Nodejs的自动**任务运行器**
+  * 能自动化地完成 javascript/coffee/sass/less/html/image/css 等文件的
+    合并、压缩、检查、监听文件变化、浏览器自动刷新、测试等任务
+  * gulp更高效(异步多任务), 更易于使用, 插件高质量
+* 基于nodejs，因此需要安装nodejs
+```
+node -v       //查看版本号
+```
+* 目录结构
+   ```
+  |- dist
+  |- src
+    |- js
+    |- css
+    |- less
+  |- index.html
+  |- gulpfile.js-----gulp配置文件
+  |- package.json
+    {
+      "name": "gulp-test",
+      "version": "1.0.0"
+    } 
+  ```
+* Grunt插件介绍
 
