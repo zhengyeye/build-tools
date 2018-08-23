@@ -10,8 +10,8 @@ module.exports = function(grunt) {
           separator: ';'   //使用;连接合并
         },
         build: { //此名称任意
-          src:  ["src/*.js"],  //合并哪些js文件
-          dest: "build/js/built.js" //输出的js文件
+          src:  ["src/js/*.js"],  //合并哪些js文件
+          dest: "build/js/build.js" //输出的js文件
         }
       },
       //压缩js文件
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
         options: {
           jshintrc : '.jshintrc' //指定配置文件
         },
-        // build : ['Gruntfile.js', 'src/*.js'] //指定检查的文件
+        // build : ['Gruntfile.js', 'src/js/*.js'] //指定检查的文件
         test1:['Gruntfile.js'],
         test2:['src/*.js']  
       },
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         },
         build: {
           files: {//在build/css/下生成output.min.css
-              'build/css/output.min.css': ['css/*.css']
+              'build/css/output.min.css': ['src/css/*.css']
           }
         }
       },
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
         options: {
             jshintrc : '.csslintrc' //指定配置文件
           },
-          build : ['Gruntfile.js', 'css/*.css'] //指定检查的文件
+          build : ['Gruntfile.js', 'src/css/*.css'] //指定检查的文件
       },
       //TODO:自动监听好像没用
       watch : {
